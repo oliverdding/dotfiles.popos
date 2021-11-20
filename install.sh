@@ -37,8 +37,6 @@ echo "##################"
 echo "mkdir directory..."
 echo "##################"
 
-mkdir -p "$HOME"/.config/pg
-mkdir -p "$HOME"/.cache/pg
 mkdir -p $HOME/.local/share/bash
 mkdir -p "$HOME"/.local/share/gnupg
 mkdir -p "$HOME"/.local/share/ivy2
@@ -48,11 +46,10 @@ echo "##########################"
 echo "linking user's dotfiles..."
 echo "##########################"
 
-link ".bash_profile"
+link ".profile"
 link ".bashrc"
 
 link ".config/bottom"
-link ".config/Code - OSS/User/settings.json"
 link ".config/environment.d"
 link ".config/gdb/init"
 link ".config/git/common"
@@ -67,7 +64,6 @@ link ".config/wgetrc"
 link ".local/bin/gdb"
 link ".local/bin/gpg"
 link ".local/bin/gpg" ".local/bin/gpg2"
-link ".local/bin/grep"
 link ".local/bin/ls"
 link ".local/bin/sbt"
 link ".local/bin/sqlite3"
